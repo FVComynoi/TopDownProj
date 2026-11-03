@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InputManager
 {
+    public bool isAttackPressed => inputControls.Player.Attack.WasPressedThisFrame();
     private InputControls inputControls;
 
     //public Vector2 inputDirection => inputControls.Player.Move.ReadValue<Vector2>();
